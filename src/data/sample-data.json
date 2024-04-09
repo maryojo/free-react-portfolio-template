@@ -1,0 +1,44 @@
+
+{
+  "name": "John Doe",
+  "title": "Full Stack Developer",
+  "about": "I am a passionate full stack developer with experience in building web applications using modern technologies such as React, Node.js, and MongoDB. I love solving complex problems and delivering high-quality solutions that exceed client expectations.",
+  "contact": {
+    "email": "john.doe@example.com",
+    "phone": "+1234567890"
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe"
+  },
+  "projects": [
+    {
+      "title": "E-commerce Website",
+      "description": "Developed a full-fledged e-commerce website using React for the frontend and Node.js for the backend. Integrated payment gateways and implemented user authentication and authorization.",
+      "technologies": ["React", "Node.js", "Express.js", "MongoDB", "Stripe"],
+      "github": "https://github.com/johndoe/ecommerce-website",
+      "demo": "https://demo.ecommerce.com"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Designed and developed my personal portfolio website from scratch using HTML, CSS, and JavaScript. Implemented responsive design and showcased my projects and skills.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/johndoe/portfolio",
+      "demo": "https://johndoe.com"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend Development",
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Redux", "Bootstrap"]
+    },
+    {
+      "category": "Backend Development",
+      "skills": ["Node.js", "Express.js", "MongoDB", "RESTful APIs"]
+    },
+    {
+      "category": "Other Skills",
+      "skills": ["Git", "GitHub", "Agile Development", "Problem Solving"]
+    }
+  ]
+}

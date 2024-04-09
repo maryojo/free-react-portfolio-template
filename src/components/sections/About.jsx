@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <>
-      <div className="font-bold text-[32px]">Hi, I'm Mary</div>
+    <div>
+      <p className="font-bold text-[32px]">Hi, I'm Mary</p>
       <p className="text-[15px]">
         Lorem ipsum dolor sit amet consectetur. Tortor rutrum sit euismod urna
         ac facilisi cursus sodales elementum. Risus ultricies malesuada turpis
@@ -10,7 +10,7 @@ const About = () => {
         rutrum ligula in. Purus lectus eget ipsum viverra a elit sed. Venenatis
         viverra enim cursus eget nibh aliquam accumsan arcu.
       </p>
-    </>
+    </div>
   );
 };
 

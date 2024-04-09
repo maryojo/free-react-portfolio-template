@@ -1,7 +1,9 @@
 
 const ProjectHoverCard = () => {
   return (
-    <div className="rounded-lg hover:h-full  hover:bg-white hover:bg-opacity-30 hover:backdrop-blur-md m-3  hover:top-5"></div>
+    <div className="rounded-lg h-full  bg-white bg-opacity-30 backdrop-blur-md m-3  z-20 top-5">
+      
+    </div>
   )
 }
 

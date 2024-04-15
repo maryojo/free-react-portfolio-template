@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { HiExternalLink } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
+
 import SocialMedia from "./SocialMedia";
 import { generateLogo } from "../utils/generate-logo";
 
@@ -9,9 +11,6 @@ const Sidebar = ({ isMobileMenuOpen, setMobileMenuOpen }) => {
   const toggleMenuRef = useRef(null);
 
   const logoDataURL = generateLogo("Mory Ojo");
-  const logoImage = new Image();
-  console.log(logoImage);
-// logoImage.src = logoDataURL;
 
 
   const handleMenuItemClick = (menuItem) => {
@@ -31,6 +30,10 @@ const Sidebar = ({ isMobileMenuOpen, setMobileMenuOpen }) => {
       setMobileMenuOpen(false);
     }
   };
+
+  const closeSidebar = () =>{
+    setMobileMenuOpen(false);
+  }
 
   useEffect(() => {
     document.addEventListener("click", handleClickOut, false);
@@ -56,8 +59,11 @@ const Sidebar = ({ isMobileMenuOpen, setMobileMenuOpen }) => {
         }`}
       >
         <div className="main-sections h-full flex flex-col justify-between">
-        <div className="flex justify-start w-full ">
+        <div className="flex justify-between md:justify-start w-full items-center">
           <img src={logoDataURL}/>
+          <div className="cursor-pointer md:hidden text-[22px]" onClick={closeSidebar}>
+          <IoClose/>
+          </div>
         </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-row items-center gap-3 cursor-pointer hover:text-[#00A177]">
@@ -120,6 +126,10 @@ const Sidebar = ({ isMobileMenuOpen, setMobileMenuOpen }) => {
             </div>
             <div className="flex flex-row items-center gap-1 cursor-pointer">
               <p>Get this for free</p>
+              <HiExternalLink className="text-neutral-500"/>
+            </div>
+            <div className="flex flex-row items-center gap-1 cursor-pointer">
+              <p>Get more free</p>
               <HiExternalLink className="text-neutral-500"/>
             </div>
           </div>

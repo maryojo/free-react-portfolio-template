@@ -17,6 +17,6 @@
   }
 
   input{
-    @apply p-3 text-black dark:bg-neutral-800 placeholder:text-[13px] placeholder:text-neutral-500;
+    @apply p-3 text-white dark:bg-neutral-800 placeholder:text-[13px] placeholder:text-neutral-500;
   }
 }
